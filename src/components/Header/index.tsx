@@ -1,7 +1,10 @@
-import './styles.scss';
+import "./styles.scss";
 
 export function Header() {
-    return(
-        <h1>Header</h1>
-    )
-};
+  return (
+    <div className="header">
+      <h1>Consulta Receita Federal</h1>
+      <span>Consulte dados de empresas por meio de seu CNPJ.</span>
+    </div>
+  );
+}
