@@ -1,3 +1,5 @@
+import './styles/global.scss'
+
 import { Header } from './components/Header';
 
 function App() {
