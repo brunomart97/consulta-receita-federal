@@ -4,6 +4,7 @@ import api from "../services/api";
 
 interface SearchContextData {
   getCnpj: (client: string) => void;
+  data: Object;
 }
 
 interface SearchContextProviderProps {
@@ -24,19 +25,12 @@ export function SearchProvider({children}: SearchContextProviderProps) {
   function getCnpj(client: string) {
     setCnpj(client);
   }
-
-  function result() {
-    if(data) {
-      return data;
-    } else {
-      alert("CNPJ inválido")
-    }
-  }
-
+  
   return (
     <SearchContext.Provider 
       value={{
         getCnpj,
+        data
       }}
     >
       {children}
