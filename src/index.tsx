@@ -1,7 +1,10 @@
 import ReactDOM from 'react-dom';
 import App from './App';
+import { SearchProvider } from './hooks/useSearch';
 
 ReactDOM.render(
-    <App />,
+  <SearchProvider>
+    <App />
+  </SearchProvider>,
   document.getElementById('root')
 );

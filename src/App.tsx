@@ -1,10 +1,14 @@
-import './styles/global.scss'
+import "./styles/global.scss";
 
-import { Header } from './components/Header';
+import { Header } from "./components/Header";
+import { Search } from "./components/Search";
 
 function App() {
   return (
-    <Header />
+    <>
+      <Header />
+      <Search />
+    </>
   );
 }
 
