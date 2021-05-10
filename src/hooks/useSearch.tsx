@@ -19,13 +19,13 @@ export function SearchProvider({children}: SearchContextProviderProps) {
   console.log(data)
   
   useEffect(() => {
-    api.get(`${cnpj}`).then(response => setData(response.data));
+    api.get(`${cnpj}/days/10`).then(response => setData(response.data));
   }, [cnpj])
 
   function getCnpj(client: string) {
     setCnpj(client);
   }
-  
+
   return (
     <SearchContext.Provider 
       value={{
