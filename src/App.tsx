@@ -1,13 +1,11 @@
 import "./styles/global.scss";
 
-import { Header } from "./components/Header";
-import { Search } from "./components/Search";
+import { Routes } from "./routes/routes";
 
 function App() {
   return (
     <>
-      <Header />
-      <Search />
+      <Routes />
     </>
   );
 }
